@@ -1,0 +1,16 @@
+.gradient-text {
+    background: linear-gradient(to right, #10b981, #3b82f6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .typing-text {
+    display: inline-block;
+  }
+  .cursor::after {
+    content: "|";
+    animation: blink 1s infinite;
+  }
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
